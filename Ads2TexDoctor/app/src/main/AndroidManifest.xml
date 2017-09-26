@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ads2tex.ads2texdoctor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name="com.ads2tex.ads2texdoctor.App.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ads2tex"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ads2tex"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.ads2tex.ads2texdoctor.Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ads2tex.ads2texdoctor.MainActivity"
+            android:label="Ads2TexCable"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.ads2tex.cable.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ads2tex.ads2texdoctor.Splash"
+            android:label="Ads2TexCable"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.ads2tex.cable.Splash" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

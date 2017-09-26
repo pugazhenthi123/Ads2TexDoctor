@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <EditText
+        android:id="@+id/newpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
+    <EditText
+        android:id="@+id/confirmpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newpass"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
+    <Button
+        android:id="@+id/alertbutton"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/confirmpass"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_button5"
+        android:textColorHighlight="#000000"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+</RelativeLayout>

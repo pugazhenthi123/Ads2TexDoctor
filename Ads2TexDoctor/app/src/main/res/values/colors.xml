@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="myprimecolor">#3F51B5</color>
+    <color name="myprimedarkcolor">#303F9F</color>
+    <color name="myaccntcolor">#283593</color>
+    <color name="mydrawerbg">#FFF</color>
+    <color name="mywindowbg">#FFF</color>
+    <color name="mytxtprimecolor">#212121</color>
+    <color name="mynavigationcolor">#000</color>
+
+
+    <color name="red">#D97A65</color>
+    <color name="yellow">#E6B900</color>
+    <color name="green">#53B349</color>
+    <color name="blue">#428bca</color>
+    <color name="blue2">#303F9F</color>
+    <color name="google">#4285f4</color>
+    <color name="orange">#ff7f04</color>
+
+    <drawable name="pressed_gray">#0c000000</drawable>
+    <drawable name="selected_gray">#2c000000</drawable>
+</resources>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/home_adap_cardlyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/home_adap_rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="1dp">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/home_adap_patient_name_rlyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="70dp">
+
+                    <TextView
+                        android:id="@+id/home_adap_patient_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="horizontal"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:text="Kumar"
+                        android:textColor="#303F9F"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/home_adap_patient_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Footer3"
+                    android:textSize="@dimen/abc_text_size_caption_material" />
+
+                <RelativeLayout
+                    android:id="@+id/home_adap_diseases_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_adap_patient_name_rlyt"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/home_adap_diseases_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:scrollHorizontally="true"
+                        android:text="10J01"
+                        android:textColor="@color/carbon_black"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/home_adap_rl_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_adap_diseases_lyt"
+                    android:layout_margin="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="-20dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/home_adap_l_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/home_adap_l_layout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp">
+
+                                <IconTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginTop="4sp"
+                                    android:text="{fa_map_marker}"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/abc_text_size_caption_material" />
+
+                                <TextView
+                                    android:id="@+id/home_adap_no_of_checkups_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="14dp"
+                                    android:text=" Checkup No "
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:textStyle="bold" />
+
+                                <IconTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_no_of_checkups_tv"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginTop="4sp"
+                                    android:text="{fa_location_arrow}"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/abc_text_size_caption_material" />
+
+                                <TextView
+                                    android:id="@+id/home_adap_weight_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_no_of_checkups_tv"
+                                    android:layout_marginLeft="14dp"
+                                    android:text=" Weight "
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:textStyle="bold" />
+
+                                <IconTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_weight_tv"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginTop="4sp"
+                                    android:text="{fa_money}"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/abc_text_size_caption_material" />
+
+                                <TextView
+                                    android:id="@+id/home_adap_temperature_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_weight_tv"
+                                    android:layout_marginLeft="14dp"
+                                    android:text=" Temp "
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:textStyle="bold" />
+
+                                <IconTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_temperature_tv"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginTop="4sp"
+                                    android:text="{fa_phone}"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/abc_text_size_caption_material" />
+
+                                <TextView
+                                    android:id="@+id/home_adap_sugar_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_temperature_tv"
+                                    android:layout_marginLeft="14dp"
+                                    android:text=" Sugar "
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:textStyle="bold" />
+
+                                <IconTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_sugar_tv"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginTop="4sp"
+                                    android:text="{fa_phone}"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/abc_text_size_caption_material" />
+
+                                <TextView
+                                    android:id="@+id/home_adap_pressure_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/home_adap_sugar_tv"
+                                    android:layout_marginLeft="14dp"
+                                    android:text=" Presure "
+                                    android:textSize="@dimen/abc_text_size_small_material"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/home_adap_l_layout2"
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/home_adap_no_of_checkups_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text=": No Of Checkups "
+                                android:textSize="@dimen/abc_text_size_small_material" />
+
+                            <TextView
+                                android:id="@+id/home_adap_weight_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/home_adap_no_of_checkups_txt"
+                                android:maxLines="1"
+                                android:text=": Weight "
+                                android:textSize="@dimen/abc_text_size_small_material" />
+
+                            <TextView
+                                android:id="@+id/home_adap_temperature_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/home_adap_weight_txt"
+                                android:maxLines="1"
+                                android:text=": Temperature "
+                                android:textSize="@dimen/abc_text_size_small_material" />
+
+                            <TextView
+                                android:id="@+id/home_adap_sugar_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/home_adap_temperature_txt"
+                                android:maxLines="1"
+                                android:text=": Sugar "
+                                android:textSize="@dimen/abc_text_size_small_material" />
+
+                            <TextView
+                                android:id="@+id/home_adap_pressure_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/home_adap_sugar_txt"
+                                android:maxLines="1"
+                                android:text=": Pressure "
+                                android:textSize="@dimen/abc_text_size_small_material" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/home_adap_status_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_adap_l_layout"
+                        android:layout_marginLeft="4sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/home_adap_status_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Patient Status :"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:id="@+id/home_adap_status_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/home_adap_status_tv"
+                            android:text="Normal"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+                    </RelativeLayout>
+
+                    <TextView
+                    android:id="@+id/home_adap_description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_adap_status_lyt"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="qwerty djskfd kfkjkdklj ljkdglkjdf ijikjkljs verew weewr wrwer erwer jskjfk osjkfjlksd jslkjdf"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:visibility="gone"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/home_adap_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/home_adap_l_layout"
+                        android:layout_marginTop="18dp"
+                        android:background="@color/blue" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <DatePicker
+            android:id="@+id/home_adap_next_checkup_date_datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:spinnersShown="false"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

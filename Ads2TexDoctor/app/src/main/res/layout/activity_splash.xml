@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ads2tex.ads2texdoctor.Splash">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#0367b5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="3dp"
+        android:background="#ffffff"/>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="16dp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:background="@drawable/locations" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:text="Tirupur"-->
+            <!--android:textColor="@color/green"-->
+            <!--android:textSize="15dp" />-->
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/splashlyt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+        <!--<ImageView-->
+        <!--android:layout_width="230dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:background="@drawable/round_button"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+        <ImageView
+            android:id="@+id/hospital_logo"
+            android:layout_width="400px"
+            android:layout_height="230px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/promolyt"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/splashlyt1"
+        android:background="#0367b5">
+        <TextView
+            android:id="@+id/promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sliderlyt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/promolyt"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Accordion"
+            custom:pager_animation_span="1100" />
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            custom:selected_color="#0095BF"
+            custom:selected_drawable="@drawable/bird"
+            custom:selected_height="6dp"
+            custom:selected_padding_left="5dp"
+            custom:selected_padding_right="5dp"
+            custom:selected_width="6dp"
+            custom:shape="oval"
+            custom:unselected_color="#55333333"
+            custom:unselected_height="6dp"
+            custom:unselected_padding_left="5dp"
+            custom:unselected_padding_right="5dp"
+            custom:unselected_width="6dp" />
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator2"
+            style="@style/AndroidImageSlider_Corner_Oval_Orange"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ne"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/abc_text_size_caption_material"
+            android:visibility="visible" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#cf4d00">
+            <Button
+                android:id="@+id/go"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="#0367b5"
+                android:enabled="false"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/abc_text_size_headline_material" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/loader"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/loader3"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="120dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/cbtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@drawable/debug_step_over"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/browser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/myprimecolor">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/keyboard_backspace"
+                    android:layout_marginLeft="10dp"/>
+                <Button
+                    android:id="@+id/b_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    style="?android:borderlessButtonStyle"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_web"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:id="@+id/b_webbtn"
+                    android:layout_width="50dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    style="?android:borderlessButtonStyle"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/browser_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="60dp"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/abc_text_size_large_material"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/wv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

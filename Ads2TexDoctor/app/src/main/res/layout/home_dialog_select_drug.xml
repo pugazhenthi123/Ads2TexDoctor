@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/home_adap_cardlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/home_dialog_drug_select_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fadingEdge="horizontal"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:text="CALPOL"
+                android:textColor="#303F9F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/home_dialog_drug_select_remove_btn"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/home_dialog_drug_roundbutton"
+                android:text="X"
+                android:textColor="@color/carbon_background_dark"
+                android:textColorHighlight="@color/carbon_background_light"
+                android:textSize="@dimen/abc_text_size_small_material" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

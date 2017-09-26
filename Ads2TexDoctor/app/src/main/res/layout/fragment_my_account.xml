@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ads2tex.ads2texdoctor.Fragments.MyAccount">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="My Account"
+            android:textStyle="italic"
+            android:textSize="@dimen/abc_text_size_large_material"
+            style="?attr/editTextStyle"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_key_variant"/>
+
+            <TextView
+                android:id="@+id/chgpass"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:text="Change Password"
+                android:layout_marginTop="1dp"
+                android:textColorHighlight="#000000"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:onClick="true"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_logout"/>
+
+            <TextView
+                android:id="@+id/macclogout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:textColorHighlight="#000000"
+                android:text="Logout"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:onClick="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linlaHeaderProgresslogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:alpha="0.4"
+        android:visibility="gone" >
+        <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+            android:id="@+id/google_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            gpb:type="chrome_floating_circles"/>
+        </RelativeLayout>
+
+
+</RelativeLayout>

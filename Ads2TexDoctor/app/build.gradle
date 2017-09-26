@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId "com.ads2tex.ads2texdoctor"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+}
+android {
+    defaultConfig {
+        // Stops the Gradle plugin’s automatic rasterization of vectors
+        vectorDrawables.generatedDensities = []
+    }
+    // Flag to tell aapt to keep the attribute ids around
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.0'
+    compile 'com.android.support:support-v4:25.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.+'
+    compile 'com.blunderer:materialdesignlibrary:2.0.0'
+    compile 'com.joanzapata.android:android-iconify:1.0.9'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.jpardogo.googleprogressbar:library:1.2.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.0'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'org.hamcrest:hamcrest-all:1.3'
+    compile 'com.android.support:multidex:1.0.1'
+    testCompile 'junit:junit:4.12'
+}

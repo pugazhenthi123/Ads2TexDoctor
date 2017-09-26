@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    tools:context="com.ads2tex.ads2texdoctor.Login">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_actionbar">
+
+
+        ``
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/loglyt1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="30dp">-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="230dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="90dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/round_button"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="88dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@drawable/logo" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<Button-->
+            <!--android:id="@+id/u_fp"-->
+            <!--style="?android:borderlessButtonStyle"-->
+            <!--android:layout_width="340dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_below="@id/loglyt1"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:text="Forget Password?"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="20dp"-->
+            <!--android:typeface="monospace" />-->
+
+            <RelativeLayout
+                android:id="@+id/log_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp">
+
+                <EditText
+                    android:id="@+id/u_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:hint="Your Email"
+                    android:maxLines="1"
+                    android:textSize="@dimen/abc_text_size_medium_material" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/log_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/log_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/u_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="@dimen/abc_text_size_medium_material" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/u_log"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/log_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button5"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+
+            <LinearLayout
+                android:id="@+id/twobttn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/u_log"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/u_fp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/round_button5"
+                    android:text="Forgot Password?"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#000000"
+                    android:textSize="@dimen/abc_text_size_caption_material" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/twobttn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"></RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/linlaHeaderProgresslogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+            android:id="@+id/google_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            gpb:type="chrome_floating_circles" />
+    </RelativeLayout>
+</RelativeLayout>

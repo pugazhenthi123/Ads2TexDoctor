@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77c135e4-7f07-427b-a863-efb242f524eb" name="Default" comment="" />
+    <ignored path="PhpServer.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - doctor@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - doctor@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hospital" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - doctor@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="doctors" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - doctor@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="banner_app" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="PhpServer" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dataquery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataquery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="62" column="106" selection-start-line="62" selection-start-column="106" selection-end-line="62" selection-end-column="106" />
+              <folding>
+                <marker date="1506332665876" expanded="true" signature="467:496" placeholder="SELECT * FRO... token" />
+                <marker date="1506332665876" expanded="true" signature="467:500" placeholder="SELECT * FRO... token" />
+                <marker date="1506332665876" expanded="true" signature="467:509" placeholder="SELECT * FRO... token" />
+                <marker date="1506332665876" expanded="true" signature="744:788" placeholder="SELECT * FRO... doctors" />
+                <marker date="1506332665876" expanded="true" signature="1034:1078" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="1034:1098" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="1034:1112" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="1363:1441" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="1722:1832" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="1722:1848" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="2127:2237" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="2480:2590" placeholder="SELECT * FRO... patient" />
+                <marker date="1506332665876" expanded="true" signature="2868:2965" placeholder="SELECT * FRO... prescription" />
+                <marker date="1506332665876" expanded="true" signature="2868:2983" placeholder="SELECT * FRO... prescription" />
+                <marker date="1506332665876" expanded="true" signature="3193:3219" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506332665876" expanded="true" signature="3193:3231" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506332665876" expanded="true" signature="3193:3403" placeholder="SELECT * FRO... prescription" />
+                <marker date="1506332665876" expanded="true" signature="3193:3435" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506332665876" expanded="true" signature="3660:3679" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506332665876" expanded="true" signature="3660:3693" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506332665876" expanded="true" signature="3902:3943" placeholder="SELECT * FRO... drug_unit" />
+                <marker date="1506332665876" expanded="true" signature="3902:3956" placeholder="SELECT * FRO... drug_unit" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2652">
+              <caret line="156" column="88" selection-start-line="156" selection-start-column="88" selection-end-line="156" selection-end-column="88" />
+              <folding>
+                <marker date="1506370268170" expanded="true" signature="495:573" placeholder="SELECT * FRO... customer_reg" />
+                <marker date="1506370268170" expanded="true" signature="870:940" placeholder="SELECT * FRO... customer_reg" />
+                <marker date="1506370268170" expanded="true" signature="1298:1377" placeholder="Update custo... " />
+                <marker date="1506370268170" expanded="true" signature="1554:1598" placeholder="SELECT * FRO... customer_reg" />
+                <marker date="1506370268170" expanded="true" signature="2619:2666" placeholder="SELECT * FRO... doctors" />
+                <marker date="1506370268170" expanded="true" signature="3755:3830" placeholder="SELECT * FRO... area_group" />
+                <marker date="1506370268170" expanded="true" signature="3998:4034" placeholder="SELECT * FRO... drug_unit" />
+                <marker date="1506370268170" expanded="true" signature="4214:4260" placeholder="SELECT * FRO... drug_unit" />
+                <marker date="1506370268170" expanded="true" signature="4434:4475" placeholder="SELECT * FRO... drug_type" />
+                <marker date="1506370268170" expanded="true" signature="4642:4685" placeholder="SELECT * FRO... drug_type" />
+                <marker date="1506370268170" expanded="true" signature="4843:4880" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506370268170" expanded="true" signature="5050:5094" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506370268170" expanded="true" signature="5267:5312" placeholder="SELECT * FRO... drugs" />
+                <marker date="1506370268170" expanded="true" signature="5548:5592" placeholder="SELECT * FRO... customer_reg" />
+                <marker date="1506370268170" expanded="true" signature="6238:6282" placeholder="SELECT * FRO... customer_reg" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeinfo_json.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homeinfo_json.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="712">
+              <caret line="191" column="5" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
+              <folding>
+                <marker date="1506400184033" expanded="true" signature="3574:3702" placeholder="SELECT * fro... cus_bill" />
+                <marker date="1506400184033" expanded="true" signature="4113:4194" placeholder="update gcm_m... " />
+                <marker date="1506400184033" expanded="true" signature="4373:4451" placeholder="select * FRO... doctors" />
+                <marker date="1506400184033" expanded="true" signature="4651:4695" placeholder="select * FRO... customer_reg" />
+                <marker date="1506400184033" expanded="true" signature="4782:4850" placeholder="Select * fro... hospital" />
+                <marker date="1506400184033" expanded="true" signature="5352:5415" placeholder="update gcm_m... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doctor.hospital" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.hospital">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slider_json.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slider_json.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+              <folding>
+                <marker date="1506398539346" expanded="true" signature="532:573" placeholder="SELECT * FRO... banner_app" />
+                <marker date="1506398539346" expanded="true" signature="1054:1095" placeholder="SELECT * FRO... banner_app" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myacc_json.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myacc_json.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="42" column="67" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="67" />
+              <folding>
+                <marker date="1506400047190" expanded="true" signature="818:898" placeholder="SELECT sno F... doctors" />
+                <marker date="1506400047190" expanded="true" signature="1115:1165" placeholder="SELECT * fro... doctors" />
+                <marker date="1506400047190" expanded="true" signature="1285:1353" placeholder="Select * fro... hospital" />
+                <marker date="1506400047190" expanded="true" signature="1514:1607" placeholder="UPDATE docto... " />
+                <marker date="1506400047190" expanded="true" signature="2528:2602" placeholder="SELECT sno F... customer_reg" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.doctors" />
+        <option value="$PROJECT_DIR$/db.php" />
+        <option value="$PROJECT_DIR$/db_connect.php" />
+        <option value="$PROJECT_DIR$/dataquery.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/db_functions.php" />
+        <option value="$PROJECT_DIR$/slider_json.php" />
+        <option value="$PROJECT_DIR$/myacc_json.php" />
+        <option value="$PROJECT_DIR$/homeinfo_json.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DoctorPhpServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DoctorPhpServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DoctorPhpServer" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77c135e4-7f07-427b-a863-efb242f524eb" name="Default" comment="" />
+      <created>1505814191713</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505814191713</updated>
+      <workItem from="1505814196921" duration="1357000" />
+      <workItem from="1505838426589" duration="608000" />
+      <workItem from="1505875618262" duration="7472000" />
+      <workItem from="1505907606033" duration="17794000" />
+      <workItem from="1505968636508" duration="7085000" />
+      <workItem from="1506049625948" duration="20160000" />
+      <workItem from="1506174160984" duration="1817000" />
+      <workItem from="1506212253988" duration="6781000" />
+      <workItem from="1506278238314" duration="1817000" />
+      <workItem from="1506309729659" duration="6406000" />
+      <workItem from="1506396999806" duration="6839000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="78136000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15658094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dataquery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <marker date="1506332665876" expanded="true" signature="467:496" placeholder="SELECT * FRO... token" />
+            <marker date="1506332665876" expanded="true" signature="467:500" placeholder="SELECT * FRO... token" />
+            <marker date="1506332665876" expanded="true" signature="467:509" placeholder="SELECT * FRO... token" />
+            <marker date="1506332665876" expanded="true" signature="744:788" placeholder="SELECT * FRO... doctors" />
+            <marker date="1506332665876" expanded="true" signature="1034:1078" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1034:1098" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1034:1112" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1363:1441" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1722:1832" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1722:1848" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="2127:2237" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="2480:2590" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="2868:2965" placeholder="SELECT * FRO... prescription" />
+            <marker date="1506332665876" expanded="true" signature="2868:2983" placeholder="SELECT * FRO... prescription" />
+            <marker date="1506332665876" expanded="true" signature="3193:3219" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3193:3231" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3193:3403" placeholder="SELECT * FRO... prescription" />
+            <marker date="1506332665876" expanded="true" signature="3193:3435" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3660:3679" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3660:3693" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3902:3943" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506332665876" expanded="true" signature="3902:3956" placeholder="SELECT * FRO... drug_unit" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.drug_unit">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeinfo_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="149" column="59" selection-start-line="149" selection-start-column="59" selection-end-line="149" selection-end-column="59" />
+          <folding>
+            <marker date="1506400184033" expanded="true" signature="3574:3702" placeholder="SELECT * fro... cus_bill" />
+            <marker date="1506400184033" expanded="true" signature="4113:4194" placeholder="update gcm_m... " />
+            <marker date="1506400184033" expanded="true" signature="4373:4451" placeholder="select * FRO... doctors" />
+            <marker date="1506400184033" expanded="true" signature="4651:4695" placeholder="select * FRO... customer_reg" />
+            <marker date="1506400184033" expanded="true" signature="4782:4850" placeholder="Select * fro... hospital" />
+            <marker date="1506400184033" expanded="true" signature="5352:5415" placeholder="update gcm_m... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.patient_status">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.token">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="86" selection-start-line="144" selection-start-column="86" selection-end-line="144" selection-end-column="86" />
+          <folding>
+            <marker date="1506370268170" expanded="true" signature="495:573" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="870:940" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="1298:1377" placeholder="Update custo... " />
+            <marker date="1506370268170" expanded="true" signature="1554:1598" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="2619:2666" placeholder="SELECT * FRO... doctors" />
+            <marker date="1506370268170" expanded="true" signature="3755:3830" placeholder="SELECT * FRO... area_group" />
+            <marker date="1506370268170" expanded="true" signature="3998:4034" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4214:4260" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4434:4475" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4642:4685" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4843:4880" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5050:5094" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5267:5312" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5548:5592" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="6238:6282" placeholder="SELECT * FRO... customer_reg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myacc_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slider_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeinfo_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1506400184033" expanded="true" signature="3574:3702" placeholder="SELECT * fro... cus_bill" />
+            <marker date="1506400184033" expanded="true" signature="4113:4194" placeholder="update gcm_m... " />
+            <marker date="1506400184033" expanded="true" signature="4373:4451" placeholder="select * FRO... doctors" />
+            <marker date="1506400184033" expanded="true" signature="4651:4695" placeholder="select * FRO... customer_reg" />
+            <marker date="1506400184033" expanded="true" signature="4782:4850" placeholder="Select * fro... hospital" />
+            <marker date="1506400184033" expanded="true" signature="5352:5415" placeholder="update gcm_m... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="86" selection-start-line="132" selection-start-column="86" selection-end-line="132" selection-end-column="86" />
+          <folding>
+            <marker date="1506370268170" expanded="true" signature="495:573" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="870:940" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="1298:1377" placeholder="Update custo... " />
+            <marker date="1506370268170" expanded="true" signature="1554:1598" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="2619:2666" placeholder="SELECT * FRO... doctors" />
+            <marker date="1506370268170" expanded="true" signature="3755:3830" placeholder="SELECT * FRO... area_group" />
+            <marker date="1506370268170" expanded="true" signature="3998:4034" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4214:4260" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4434:4475" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4642:4685" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4843:4880" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5050:5094" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5267:5312" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5548:5592" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="6238:6282" placeholder="SELECT * FRO... customer_reg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slider_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeinfo_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1506400184033" expanded="true" signature="3574:3702" placeholder="SELECT * fro... cus_bill" />
+            <marker date="1506400184033" expanded="true" signature="4113:4194" placeholder="update gcm_m... " />
+            <marker date="1506400184033" expanded="true" signature="4373:4451" placeholder="select * FRO... doctors" />
+            <marker date="1506400184033" expanded="true" signature="4651:4695" placeholder="select * FRO... customer_reg" />
+            <marker date="1506400184033" expanded="true" signature="4782:4850" placeholder="Select * fro... hospital" />
+            <marker date="1506400184033" expanded="true" signature="5352:5415" placeholder="update gcm_m... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="86" selection-start-line="132" selection-start-column="86" selection-end-line="132" selection-end-column="86" />
+          <folding>
+            <marker date="1506370268170" expanded="true" signature="495:573" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="870:940" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="1298:1377" placeholder="Update custo... " />
+            <marker date="1506370268170" expanded="true" signature="1554:1598" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="2619:2666" placeholder="SELECT * FRO... doctors" />
+            <marker date="1506370268170" expanded="true" signature="3755:3830" placeholder="SELECT * FRO... area_group" />
+            <marker date="1506370268170" expanded="true" signature="3998:4034" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4214:4260" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4434:4475" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4642:4685" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4843:4880" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5050:5094" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5267:5312" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5548:5592" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="6238:6282" placeholder="SELECT * FRO... customer_reg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slider_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myacc_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeinfo_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="36" />
+          <folding>
+            <marker date="1506400184033" expanded="true" signature="3574:3702" placeholder="SELECT * fro... cus_bill" />
+            <marker date="1506400184033" expanded="true" signature="4113:4194" placeholder="update gcm_m... " />
+            <marker date="1506400184033" expanded="true" signature="4373:4451" placeholder="select * FRO... doctors" />
+            <marker date="1506400184033" expanded="true" signature="4651:4695" placeholder="select * FRO... customer_reg" />
+            <marker date="1506400184033" expanded="true" signature="4782:4850" placeholder="Select * fro... hospital" />
+            <marker date="1506400184033" expanded="true" signature="5352:5415" placeholder="update gcm_m... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <marker date="1506370268170" expanded="true" signature="495:573" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="870:940" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="1298:1377" placeholder="Update custo... " />
+            <marker date="1506370268170" expanded="true" signature="1554:1598" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="2619:2666" placeholder="SELECT * FRO... doctors" />
+            <marker date="1506370268170" expanded="true" signature="3755:3830" placeholder="SELECT * FRO... area_group" />
+            <marker date="1506370268170" expanded="true" signature="3998:4034" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4214:4260" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4434:4475" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4642:4685" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4843:4880" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5050:5094" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5267:5312" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5548:5592" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="6238:6282" placeholder="SELECT * FRO... customer_reg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myacc_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc812b67-19c4-4390-9eab-fd512da46911/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.generic_names">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.disease">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.drug_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.unit">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.sub_disease">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php" />
+    <entry file="file://$PROJECT_DIR$/send_message.php" />
+    <entry file="file://$PROJECT_DIR$/test.php" />
+    <entry file="file://$PROJECT_DIR$/postadsinfo_json.php" />
+    <entry file="file://$PROJECT_DIR$/gcmnotify.php" />
+    <entry file="file://$PROJECT_DIR$/gcm_admin.php" />
+    <entry file="file://$PROJECT_DIR$/db_connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions2.php" />
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.prescription">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.patient">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.doctors">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.token">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.patient_status">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.drug_unit">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.patient_drugs">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.drugs">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataquery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="106" selection-start-line="62" selection-start-column="106" selection-end-line="62" selection-end-column="106" />
+          <folding>
+            <marker date="1506332665876" expanded="true" signature="467:496" placeholder="SELECT * FRO... token" />
+            <marker date="1506332665876" expanded="true" signature="467:500" placeholder="SELECT * FRO... token" />
+            <marker date="1506332665876" expanded="true" signature="467:509" placeholder="SELECT * FRO... token" />
+            <marker date="1506332665876" expanded="true" signature="744:788" placeholder="SELECT * FRO... doctors" />
+            <marker date="1506332665876" expanded="true" signature="1034:1078" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1034:1098" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1034:1112" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1363:1441" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1722:1832" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="1722:1848" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="2127:2237" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="2480:2590" placeholder="SELECT * FRO... patient" />
+            <marker date="1506332665876" expanded="true" signature="2868:2965" placeholder="SELECT * FRO... prescription" />
+            <marker date="1506332665876" expanded="true" signature="2868:2983" placeholder="SELECT * FRO... prescription" />
+            <marker date="1506332665876" expanded="true" signature="3193:3219" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3193:3231" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3193:3403" placeholder="SELECT * FRO... prescription" />
+            <marker date="1506332665876" expanded="true" signature="3193:3435" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3660:3679" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3660:3693" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506332665876" expanded="true" signature="3902:3943" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506332665876" expanded="true" signature="3902:3956" placeholder="SELECT * FRO... drug_unit" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.manufacturer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2652">
+          <caret line="156" column="88" selection-start-line="156" selection-start-column="88" selection-end-line="156" selection-end-column="88" />
+          <folding>
+            <marker date="1506370268170" expanded="true" signature="495:573" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="870:940" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="1298:1377" placeholder="Update custo... " />
+            <marker date="1506370268170" expanded="true" signature="1554:1598" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="2619:2666" placeholder="SELECT * FRO... doctors" />
+            <marker date="1506370268170" expanded="true" signature="3755:3830" placeholder="SELECT * FRO... area_group" />
+            <marker date="1506370268170" expanded="true" signature="3998:4034" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4214:4260" placeholder="SELECT * FRO... drug_unit" />
+            <marker date="1506370268170" expanded="true" signature="4434:4475" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4642:4685" placeholder="SELECT * FRO... drug_type" />
+            <marker date="1506370268170" expanded="true" signature="4843:4880" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5050:5094" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5267:5312" placeholder="SELECT * FRO... drugs" />
+            <marker date="1506370268170" expanded="true" signature="5548:5592" placeholder="SELECT * FRO... customer_reg" />
+            <marker date="1506370268170" expanded="true" signature="6238:6282" placeholder="SELECT * FRO... customer_reg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.banner_app">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.logo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slider_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+          <folding>
+            <marker date="1506398539346" expanded="true" signature="532:573" placeholder="SELECT * FRO... banner_app" />
+            <marker date="1506398539346" expanded="true" signature="1054:1095" placeholder="SELECT * FRO... banner_app" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myacc_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="42" column="67" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="67" />
+          <folding>
+            <marker date="1506400047190" expanded="true" signature="818:898" placeholder="SELECT sno F... doctors" />
+            <marker date="1506400047190" expanded="true" signature="1115:1165" placeholder="SELECT * fro... doctors" />
+            <marker date="1506400047190" expanded="true" signature="1285:1353" placeholder="Select * fro... hospital" />
+            <marker date="1506400047190" expanded="true" signature="1514:1607" placeholder="UPDATE docto... " />
+            <marker date="1506400047190" expanded="true" signature="2528:2602" placeholder="SELECT sno F... customer_reg" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8364decb/fc812b67-19c4-4390-9eab-fd512da46911/doctor.hospital">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeinfo_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="191" column="5" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
+          <folding>
+            <marker date="1506400184033" expanded="true" signature="3574:3702" placeholder="SELECT * fro... cus_bill" />
+            <marker date="1506400184033" expanded="true" signature="4113:4194" placeholder="update gcm_m... " />
+            <marker date="1506400184033" expanded="true" signature="4373:4451" placeholder="select * FRO... doctors" />
+            <marker date="1506400184033" expanded="true" signature="4651:4695" placeholder="select * FRO... customer_reg" />
+            <marker date="1506400184033" expanded="true" signature="4782:4850" placeholder="Select * fro... hospital" />
+            <marker date="1506400184033" expanded="true" signature="5352:5415" placeholder="update gcm_m... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
