@@ -23,7 +23,7 @@ public class Userinfo {
     private static List<Integer> disease_no_List = new ArrayList<>();
     private static List<String> disease_name_List = new ArrayList<>();
 
-    private static int navigation = 11,hospital=1,npos=0,home_today_qty_list_size=0;
+    private static int navigation = 0,hospital=1,npos=0,home_today_qty_list_size=0;
     private static String imei = "";
     private static Boolean check = false,update=false;
     private static String version = "", About = "", Applink = "", Shareapp, cboard = "",logo_link="";

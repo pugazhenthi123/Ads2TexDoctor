@@ -8,9 +8,6 @@ import android.view.ViewGroup;
 
 import com.ads2tex.ads2texdoctor.R;
 
-/**
- * A placeholder fragment containing a simple view.
- */
 public class MainActivityFragment extends Fragment {
 
     public MainActivityFragment() {

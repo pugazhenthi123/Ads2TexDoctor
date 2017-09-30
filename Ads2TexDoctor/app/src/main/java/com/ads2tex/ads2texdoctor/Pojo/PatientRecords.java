@@ -1,19 +1,15 @@
 package com.ads2tex.ads2texdoctor.Pojo;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class PatientRecords {
     private int sno,age,weight,noofchecks,temperature,pressure,sugar;
     private String name,diseases,date,next_checkup_date,status,status_color,description;
-    private List<Patient_History> patient_historyList = new ArrayList<>();
     private Boolean check;
 
     public PatientRecords() {
     }
 
-    public PatientRecords(int sno,String name, int age, int weight, int noofchecks, int temperature, int pressure, int sugar, String diseases, String date, String next_checkup_date, String status,String status_color,String description,Boolean check, List<Patient_History> patient_historyList) {
+    public PatientRecords(int sno,String name, int age, int weight, int noofchecks, int temperature, int pressure, int sugar, String diseases, String date, String next_checkup_date, String status,String status_color,String description,Boolean check) {
         this.sno = sno;
         this.name = name;
         this.age = age;
@@ -29,7 +25,6 @@ public class PatientRecords {
         this.status_color = status_color;
         this.description = description;
         this.check = check;
-        this.patient_historyList = patient_historyList;
     }
 
     public Boolean getCheck() {
@@ -151,13 +146,5 @@ public class PatientRecords {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public List<Patient_History> getPatient_historyList() {
-        return patient_historyList;
-    }
-
-    public void setPatient_historyList(List<Patient_History> patient_historyList) {
-        this.patient_historyList = patient_historyList;
     }
 }

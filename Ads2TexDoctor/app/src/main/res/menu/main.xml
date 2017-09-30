@@ -6,7 +6,7 @@
     tools:context="com.ads2tex.ads2texdoctor.MainActivity">
     <item
         android:id="@+id/action_share"
-        android:icon="@drawable/ic_account_menu"
+        android:icon="@drawable/ic_logout_menu"
         android:title="LogOut"
         appcompat:showAsAction="always" />
 </menu>

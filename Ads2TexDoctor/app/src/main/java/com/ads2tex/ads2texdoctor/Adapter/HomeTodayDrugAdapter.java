@@ -63,7 +63,7 @@ public class HomeTodayDrugAdapter extends BaseAdapter {
            In this case by inflating an xml layout */
             convertView = inflater.inflate(R.layout.home_adap_today_drugs, null);
             holder = new HomeTodayDrugAdapter.ViewHolder();
-            holder.title_lyt = (LinearLayout) convertView.findViewById(R.id.home_adap_today_title_lyt); 
+            holder.title_lyt = (LinearLayout) convertView.findViewById(R.id.home_adap_today_title_lyt);
             holder.name_tv = (TextView) convertView.findViewById(R.id.home_adap_today_name_tv);
             holder.unit_tv = (TextView) convertView.findViewById(R.id.home_adap_today_unit_tv);
             holder.qty_sp = (Spinner) convertView.findViewById(R.id.home_adap_today_spinner_qty_sp);
@@ -74,6 +74,10 @@ public class HomeTodayDrugAdapter extends BaseAdapter {
         {
         /* We recycle a View that already exists */
             holder = (HomeTodayDrugAdapter.ViewHolder) convertView.getTag();
+        }
+        if(position==0)
+        {
+            holder.title_lyt.setVisibility(View.VISIBLE);
         }
         holder.name_tv.setText(home_dialog_drug_select_unitList.get(position).getName());
         holder.unit_tv.setText(Userinfo.getDrug_unit_name_List().get(Userinfo.getDrug_unit_no_List().indexOf(home_dialog_drug_select_unitList.get(position).getUnit())));
@@ -101,49 +105,6 @@ public class HomeTodayDrugAdapter extends BaseAdapter {
         LinearLayout title_lyt;
         Spinner qty_sp;
         Button qty_sp_btn;
-    }
-    public String getColor(int id,int val)
-    {
-        String color="#000000";
-        if(id==1)
-        {
-            if(val<=100)
-            {
-                color = "#53B349";
-            }else if(val > 100 && val <= 104){
-                color = "#E6B900";
-            }else{
-                color = "#D97A65";
-            }
-        }else if(id==2){
-            if(val<=80)
-            {
-                color = "#428bca";
-            }else if(val > 80 && val <= 100)
-            {
-                color = "#53B349";
-            }else if(val > 101 && val <= 125)
-            {
-                color = "#E6B900";
-            }else if(val > 126){
-                color = "#D97A65";
-            }
-        }else{
-            if(val<=90)
-            {
-                color = "#428bca";
-            }else if(val > 90 && val <= 120)
-            {
-                color = "#53B349";
-            }else if(val > 120 && val <= 140)
-            {
-                color = "#E6B900";
-            }else if(val > 140){
-                color = "#D97A65";
-            }
-        }
-
-        return color;
     }
 
     public void SpinnerDialog(View view, final List<Integer> listall,final int id,final int pos)

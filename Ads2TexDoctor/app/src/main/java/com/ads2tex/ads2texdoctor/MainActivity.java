@@ -32,7 +32,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-
     public static Toolbar mToolbar;
     public static Context mContext;
     public static FragmentManager fragmentManagermain;
@@ -49,16 +48,31 @@ public class MainActivity extends AppCompatActivity {
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(mToolbar);
         mContext = this;
+
         fragmentManagermain = getSupportFragmentManager();
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setLogo(R.drawable.ic_magnify_menu);
-            getSupportActionBar().setTitle("Patient");
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().setLogo(R.drawable.ic_magnify_menu);
+                getSupportActionBar().setTitle("Patient");
+            }
+            Fragment fr = new HomeFragment();
+            switchFragment(fr);
+    }
+
+    public void switchFragment(Fragment baseFragment) {
+        try {
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+            fragmentTransaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+            if (fm.findFragmentById(R.id.fragment_place) == null) {
+                fragmentTransaction.add(R.id.fragment_place, baseFragment);
+            } else {
+                fragmentTransaction.replace(R.id.fragment_place, baseFragment);
+            }
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        Fragment fr = new HomeFragment();
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_place, fr);
-        fragmentTransaction.commit();
     }
 
 
@@ -140,6 +154,9 @@ public class MainActivity extends AppCompatActivity {
                         Userinfo.setUserid("");
                         Userinfo.setUsername("");
                         Userinfo.setPassword("");
+                        Intent intent = new Intent(MainActivity.this,
+                                Login.class);
+                        startActivity(intent);
                         finish();
                     }
 

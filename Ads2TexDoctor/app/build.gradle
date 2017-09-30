@@ -7,8 +7,8 @@ android {
         applicationId "com.ads2tex.ads2texdoctor"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 3
+        versionName "1.0.2"
         multiDexEnabled true
     }
     buildTypes {
@@ -37,10 +37,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:25.0'
-    compile 'com.android.support:support-v4:25.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.+'
+    compile 'com.android.support:design:25.3.1'
     compile 'com.blunderer:materialdesignlibrary:2.0.0'
     compile 'com.joanzapata.android:android-iconify:1.0.9'
     compile 'com.squareup.picasso:picasso:2.3.2'

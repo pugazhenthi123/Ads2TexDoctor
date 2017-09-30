@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/home_dialog_drug_compare_cardlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:id="@+id/home_dialog_drug_compare_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fadingEdge="horizontal"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:text="CALPOL"
+                android:textColor="#303F9F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_generic_tv"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=" Generic Name "
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:textStyle="bold"
+                        />
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_generic_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=": Paraceptomol"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_manufacturer_tv"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=" Manufacturer "
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:textStyle="bold"
+                        />
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_manufacturer_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=": Micro Labs "
+                            android:textSize="@dimen/abc_text_size_small_material" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_diseases_tv"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=" Diseases "
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:textStyle="bold"
+                        />
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_diseases_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=": Fever,cold,vomit "
+                            android:textSize="@dimen/abc_text_size_small_material" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_units_tv"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=" Units "
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:textStyle="bold"
+                        />
+                        <TextView
+                            android:id="@+id/home_dialog_drug_compare_units_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=": 80 ml,160ml,260 ml"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="bottom"
+                android:background="#f7f7f7">
+
+                <RelativeLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                >
+                    <ImageView
+                        android:id="@+id/home_dialog_drug_all_add_compare_arrow"
+                        android:layout_width="22dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_action_cancel" />
+                    <TextView
+                        android:id="@+id/home_dialog_drug_all_add_compare_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:fadingEdge="horizontal"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:text="Remove from Compare"
+                        android:layout_centerVertical="true"
+                        android:textColor="#303F9F"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/home_dialog_drug_all_compare_btn"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="-4dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

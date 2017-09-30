@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:id="@+id/home_dialog_drug_all_cardlyt"
@@ -120,6 +122,48 @@
                 </LinearLayout>
 
             </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="bottom"
+                android:background="#f7f7f7">
+
+                <RelativeLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+                    <ImageView
+                        android:id="@+id/home_dialog_drug_all_add_compare_arrow"
+                        android:layout_width="22dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_add" />
+                    <TextView
+                        android:id="@+id/home_dialog_drug_all_add_compare_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:fadingEdge="horizontal"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:text="Add to Compare"
+                        android:layout_centerVertical="true"
+                        android:textColor="#303F9F"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/home_dialog_drug_all_compare_btn"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="-4dp" />
+            </RelativeLayout>
         </LinearLayout>
 
         <RelativeLayout
@@ -181,5 +225,4 @@
                 android:layout_alignParentRight="true" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
-
 </LinearLayout>

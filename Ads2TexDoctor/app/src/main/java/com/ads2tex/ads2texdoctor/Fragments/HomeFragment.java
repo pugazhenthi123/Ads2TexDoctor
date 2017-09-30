@@ -19,6 +19,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -26,16 +27,18 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 
-import com.ads2tex.ads2texdoctor.Adapter.HomeDialogDrugAllUnitAdapter;
+import com.ads2tex.ads2texdoctor.Adapter.HomeDialogAllDrugsAdapter;
+import com.ads2tex.ads2texdoctor.Adapter.HomeDialogDrugCompareAdapter;
 import com.ads2tex.ads2texdoctor.Adapter.HomeDialogDrugSelectUnitAdapter;
 import com.ads2tex.ads2texdoctor.Adapter.HomePatientHistoryAdapter;
 import com.ads2tex.ads2texdoctor.Adapter.HomeRecordsAdapter;
 import com.ads2tex.ads2texdoctor.Adapter.HomeTodayDrugAdapter;
 import com.ads2tex.ads2texdoctor.App.AppController;
 import com.ads2tex.ads2texdoctor.Config.Config;
-import com.ads2tex.ads2texdoctor.Pojo.Home_Dialog_Drug_All_Unit;
+import com.ads2tex.ads2texdoctor.Pojo.Home_Dialog_All_Drugs;
 import com.ads2tex.ads2texdoctor.Pojo.Home_Dialog_Drug_Select_Unit;
 import com.ads2tex.ads2texdoctor.Pojo.Home_Dialog_Drug_Unit;
 import com.ads2tex.ads2texdoctor.Pojo.PatientRecords;
@@ -76,8 +79,10 @@ public class HomeFragment extends Fragment {
     public static ListView PatientListview,Patient_history_listview,home_dialog_drug_all_search_lv,home_dialog_drug_select_search_lv,home_patient_today_drug_lv;
     public static Button tryagain,btn_view,home_dialog_drug_ok_btn,home_dialog_drug_clear_btn,patient_details_btn_view,patient_today_drugs_btn_view;
     public static ImageView arrow,patient_details_arrow,patient_today_drugs_arrow;
-    public static TextView next_checkup_date_tv,Today_drugs_add_btn;
+    public static TextView next_checkup_date_tv,Today_drugs_add_btn,home_dialog_drug_compare_btn;
     public static AutoCompleteTextView home_dialog_drug_search_edittext;
+    public static Switch home_dialog_drug_compare_switch;
+    public static ListView home_dialog_drug_compare_listview;
     public static View view2;
     public static Context homeContext;
     public static View homeView;
@@ -85,11 +90,13 @@ public class HomeFragment extends Fragment {
     public static List<String> Patientnamelist = new ArrayList<>();
     public static List<Patient_History> patient_historyList = new ArrayList<>();
     public static List<PatientRecords> patientRecordslist = new ArrayList<>();
-    public static List<Home_Dialog_Drug_All_Unit> home_dialog_drug_all_unitList = new ArrayList<>();
+    public static List<Home_Dialog_All_Drugs> home_dialog_all_drugsList = new ArrayList<>();
     public static List<Home_Dialog_Drug_Select_Unit> home_dialog_drug_select_unitList = new ArrayList<>();
+    public static List<Home_Dialog_All_Drugs> home_dialog_drug_compare_List = new ArrayList<>();
     public static HomeRecordsAdapter homeRecordsAdapter;
     public static HomePatientHistoryAdapter homePatientHistoryAdapter;
-    public static HomeDialogDrugAllUnitAdapter homeDialogDrugAllUnitAdapter;
+    public static HomeDialogAllDrugsAdapter homeDialogAllDrugsAdapter;
+    public static HomeDialogDrugCompareAdapter homeDialogDrugCompareAdapter;
     public static HomeDialogDrugSelectUnitAdapter homeDialogDrugSelectUnitAdapter;
     public static HomeTodayDrugAdapter homeTodayDrugAdapter;
     public static DatePickerDialog datePickerDialog;
@@ -99,7 +106,7 @@ public class HomeFragment extends Fragment {
     public static LinearLayout linlaHeaderProgress,linlaHeaderProgress2;
     public static ArrayList<String> suggestions = new ArrayList<>();
 
-//Get Patient Records
+    //Get Patient Records
     public static int scroll=0,startIndex = 0;
     public static int fetchCount = 10;
     public static Boolean flag_loading = true,pagescroll=false;
@@ -113,7 +120,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         homeContext = getActivity();
         Userinfo.setHome_today_qty_list_size(50);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -123,23 +130,49 @@ public class HomeFragment extends Fragment {
         flag_loading = true;
         pagescroll=false;
         startIndex = 0;
-        Patientlistsp = (Spinner) view.findViewById(R.id.patientlistsp);
-        Patient_status_sp = (Spinner) view.findViewById(R.id.home_patient_status_sp);
-        Patientlistlyt = (RelativeLayout) view.findViewById(R.id.patientlistlyt);
 
+        //Error Layout TryAgain Button
         tryagain =(Button)view.findViewById(R.id.tryagain);
         tryagain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(checkpatient==0) {
+                    patientRecordslist.clear();
+                    homeRecordsAdapter.notifyDataSetChanged();
                     getRecords();
                 }else{
+                    home_dialog_all_drugsList.clear();
+                    homeDialogAllDrugsAdapter.notifyDataSetChanged();
+                    checkList();
                     getSearchRecords();
                 }
             }
         });
 
+        //Patient Details Layout
+
+        Patientnamelist.clear();
+        for (int i = 0; i < Userinfo.getPatient_name_List().size(); i++) {
+            Patientnamelist.add(Userinfo.getPatient_name_List().get(i));
+        }
+        PatientnameAdapter = new ArrayAdapter<>(
+                getActivity(), R.layout.spinner_item, Patientnamelist);
+        PatientnameAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        Patientlistsp = (Spinner) view.findViewById(R.id.patientlistsp);
+        Patientlistsp.setAdapter(PatientnameAdapter);
+        Patientlistbtn = (Button)view.findViewById(R.id.patientlistbtn);
+        Patientlistbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SpinnerDialog(Patientnamelist,R.id.patientlistsp,0);
+            }
+        });
+
+
+        Patientlistlyt = (RelativeLayout) view.findViewById(R.id.patientlistlyt);
         PatientListview = (ListView) view.findViewById(R.id.recordslv);
+        homeRecordsAdapter = new HomeRecordsAdapter(mContext, patientRecordslist);
+        PatientListview.setAdapter(homeRecordsAdapter);
         PatientListview.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView absListView, int i) {
@@ -159,35 +192,9 @@ public class HomeFragment extends Fragment {
                 }
             }
         });
-        homeRecordsAdapter = new HomeRecordsAdapter(mContext, patientRecordslist);
-        PatientListview.setAdapter(homeRecordsAdapter);
-        homePatientHistoryAdapter = new HomePatientHistoryAdapter(mContext, patient_historyList);
-        Patient_history_listview = (ListView) homeView.findViewById(R.id.home_patient_history_lv);
-        Patient_history_listview.setAdapter(homePatientHistoryAdapter);
-        for(int i=0;i<patient_historyList.size();i++)
-        {
-            Patient_History patient_history = new Patient_History(patient_historyList.get(i).getDate(),patient_historyList.get(i).getTempurature(),patient_historyList.get(i).getSugar(),patient_historyList.get(i).getPressure());
-            patient_historyList.add(patient_history);
-        }
-        homePatientHistoryAdapter.notifyDataSetChanged();
-        Patientnamelist.clear();
-        for (int i = 0; i < Userinfo.getPatient_name_List().size(); i++) {
-            Patientnamelist.add(Userinfo.getPatient_name_List().get(i));
-        }
-        PatientnameAdapter = new ArrayAdapter<>(
-                getActivity(), R.layout.spinner_item, Patientnamelist);
-        PatientnameAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Patientlistsp.setAdapter(PatientnameAdapter);
 
-        patientRecordslist.clear();
-        homeRecordsAdapter.notifyDataSetChanged();
-        Patientlistbtn = (Button)view.findViewById(R.id.patientlistbtn);
-        Patientlistbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SpinnerDialog(Patientnamelist,R.id.patientlistsp,0);
-            }
-        });
+
+        //Token Button
         Patient_refresh_btn = (Button) view.findViewById(R.id.home_token_refresh_btn);
         Patient_refresh_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,7 +211,16 @@ public class HomeFragment extends Fragment {
                 getRecords();
             }
         });
-        //Patient Spinner
+
+        // Patient History Details Layout
+        homePatientHistoryAdapter = new HomePatientHistoryAdapter(mContext, patient_historyList);
+        Patient_history_listview = (ListView) homeView.findViewById(R.id.home_patient_history_lv);
+        Patient_history_listview.setAdapter(homePatientHistoryAdapter);
+        homePatientHistoryAdapter.notifyDataSetChanged();
+
+
+        // Patient today Drugs
+        Patient_status_sp = (Spinner) view.findViewById(R.id.home_patient_status_sp);
         Patient_status_Adapter = new ArrayAdapter<>(
                 getActivity(), R.layout.spinner_item, Userinfo.getPatient_status_List());
         Patient_status_Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -217,9 +233,6 @@ public class HomeFragment extends Fragment {
                 SpinnerDialog(Userinfo.getPatient_status_List(),R.id.home_patient_status_sp,1);
             }
         });
-
-        patientRecordslist.clear();
-        homeRecordsAdapter.notifyDataSetChanged();
 
         btn_view = (Button) view.findViewById(R.id.home_adap_btn_view);
         arrow = (ImageView) view.findViewById(R.id.home_adap_arrow);
@@ -240,7 +253,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
+        //Next Checkup Date Button
         final Calendar c = Calendar.getInstance();
         int mYear = c.get(Calendar.YEAR); // current year
         int mMonth = c.get(Calendar.MONTH); // current month
@@ -266,19 +279,77 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        //Today Drugs
+        //Today Drugs Dialog Box
         home_dialog_drug_ok_btn = (Button) view.findViewById(R.id.home_dialog_drug_ok_btn);
         home_dialog_drug_clear_btn = (Button) view.findViewById(R.id.home_dialog_drug_clear_btn); 
         home_dialog_drug_search_edittext = (AutoCompleteTextView) view.findViewById(R.id.home_dialog_search_tv);
         home_dialog_drug_select_search_lv = (ListView) view.findViewById(R.id.home_dialog_drug_select_unit_lv);
         home_dialog_drug_all_search_lv = (ListView) view.findViewById(R.id.home_dialog_drug_all_unit_lv);
         home_patient_today_drug_lv = (ListView) view.findViewById(R.id.home_patient_today_drug_lv);
+        home_dialog_drug_compare_listview = (ListView) view.findViewById(R.id.home_dialog_drug_compare_lv);
         homeTodayDrugAdapter = new HomeTodayDrugAdapter(mContext,home_dialog_drug_select_unitList);
         home_patient_today_drug_lv.setAdapter(homeTodayDrugAdapter);
         homeDialogDrugSelectUnitAdapter = new HomeDialogDrugSelectUnitAdapter(mContext, home_dialog_drug_select_unitList);
         home_dialog_drug_select_search_lv.setAdapter(homeDialogDrugSelectUnitAdapter);
-        homeDialogDrugAllUnitAdapter = new HomeDialogDrugAllUnitAdapter(mContext, home_dialog_drug_all_unitList);
-        home_dialog_drug_all_search_lv.setAdapter(homeDialogDrugAllUnitAdapter);
+        homeDialogAllDrugsAdapter = new HomeDialogAllDrugsAdapter(mContext, home_dialog_all_drugsList);
+        home_dialog_drug_all_search_lv.setAdapter(homeDialogAllDrugsAdapter);
+        homeDialogDrugCompareAdapter = new HomeDialogDrugCompareAdapter(mContext, home_dialog_drug_compare_List);
+        home_dialog_drug_compare_listview.setAdapter(homeDialogDrugCompareAdapter);
+
+        home_dialog_drug_compare_List.clear();
+        home_dialog_drug_compare_switch = (Switch) view.findViewById(R.id.home_dialog_drug_compare_switch);
+        home_dialog_drug_compare_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                {
+                    home_dialog_drug_search_edittext.setEnabled(false);
+                    home_dialog_drug_compare_listview.setVisibility(View.VISIBLE);
+                    home_dialog_drug_all_search_lv.setVisibility(View.GONE);
+                    home_dialog_drug_select_search_lv.setVisibility(View.GONE);
+                }else{
+                    home_dialog_drug_search_edittext.setEnabled(true);
+                    home_dialog_drug_compare_listview.setVisibility(View.GONE);
+                    home_dialog_drug_all_search_lv.setVisibility(View.VISIBLE);
+                    checkList();
+                }
+            }
+        });
+        home_dialog_drug_compare_btn = (TextView) view.findViewById(R.id.today_drugs_compare_tv);
+        home_dialog_drug_compare_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                home_dialog_drug_compare_switch.setChecked(true);
+                home_dialog_drug_search_edittext.setEnabled(false);
+                home_dialog_drug_compare_listview.setVisibility(View.VISIBLE);
+                home_dialog_drug_all_search_lv.setVisibility(View.GONE);
+                home_dialog_drug_select_search_lv.setVisibility(View.GONE);
+                home_dialog_all_drugsList.clear();
+                checkpatient = 1;
+                startIndex_search_drugs = 0;
+                pagescroll_search_drugs = false;
+                scroll_search_drugs = 0;
+                getSearchRecords();
+            }
+        });
+
+        Today_drugs_add_btn = (TextView) view.findViewById(R.id.today_drugs_add_tv);
+        Today_drugs_add_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                home_dialog_drug_compare_switch.setChecked(false);
+                home_dialog_drug_search_edittext.setEnabled(true);
+                home_dialog_drug_compare_listview.setVisibility(View.GONE);
+                home_dialog_drug_all_search_lv.setVisibility(View.VISIBLE);
+                home_dialog_all_drugsList.clear();
+                checkList();
+                checkpatient = 1;
+                startIndex_search_drugs = 0;
+                pagescroll_search_drugs = false;
+                scroll_search_drugs = 0;
+                getSearchRecords();
+            }
+        });
 
         patient_details_btn_view = (Button) view.findViewById(R.id.home_patient_details_btn_view);
         patient_today_drugs_btn_view = (Button) view.findViewById(R.id.home_patient_today_drug_btn_view);
@@ -308,10 +379,9 @@ public class HomeFragment extends Fragment {
             suggestions.add(Userinfo.getDrug_unit_name_List().get(i));
         }
 
-        ArrayAdapter<String> adapter = new
-                ArrayAdapter<>(homeContext,android.R.layout.select_dialog_item,suggestions);
+        final ArrayAdapter<String> home_dialog_drug_search_arrayAdapter = new ArrayAdapter<>(mContext,android.R.layout.simple_list_item_1,suggestions);
 
-        home_dialog_drug_search_edittext.setAdapter(adapter);
+        home_dialog_drug_search_edittext.setAdapter(home_dialog_drug_search_arrayAdapter);
         home_dialog_drug_search_edittext.setThreshold(1);
 
 
@@ -343,6 +413,21 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        home_dialog_drug_search_edittext.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                search_text= home_dialog_drug_search_edittext.getText().toString();
+                if (AppController.getInstance().getRequestQueue() != null) {
+                    AppController.getInstance().cancelPendingRequests(tag_string_req);
+                }
+                startIndex_search_drugs = 0;
+                pagescroll_search_drugs = false;
+                scroll_search_drugs = 0;
+                home_dialog_all_drugsList.clear();
+                getSearchRecords();
+            }
+        });
+
 
         home_dialog_drug_search_edittext.addTextChangedListener(new TextWatcher() {
             @Override
@@ -353,14 +438,18 @@ public class HomeFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 search_text= home_dialog_drug_search_edittext.getText().toString();
-                if (AppController.getInstance().getRequestQueue() != null) {
-                    AppController.getInstance().cancelPendingRequests(tag_string_req);
+                if(search_text.equals(""))
+                {
+                    if (AppController.getInstance().getRequestQueue() != null) {
+                        AppController.getInstance().cancelPendingRequests(tag_string_req);
+                    }
+                    startIndex_search_drugs = 0;
+                    pagescroll_search_drugs = false;
+                    scroll_search_drugs = 0;
+                    home_dialog_all_drugsList.clear();
+                    getSearchRecords();
                 }
-                startIndex_search_drugs = 0;
-                pagescroll_search_drugs = false;
-                scroll_search_drugs = 0;
-                home_dialog_drug_all_unitList.clear();
-                getSearchRecords();
+
             }
 
             @Override
@@ -378,26 +467,38 @@ public class HomeFragment extends Fragment {
         home_dialog_drug_clear_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                search_text="";
-                home_dialog_drug_search_edittext.setText("");
-                home_dialog_drug_select_unitList.clear();
-                home_dialog_drug_all_unitList.clear();
-                checkList();
-                getSearchRecords();
-            }
-        });
-        Today_drugs_add_btn = (TextView) view.findViewById(R.id.today_drugs_add_tv);
-        Today_drugs_add_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkpatient = 1;
-                startIndex_search_drugs = 0;
-                pagescroll_search_drugs = false;
-                scroll_search_drugs = 0;
-                getSearchRecords();
+                if(home_dialog_drug_compare_switch.isChecked())
+                {
+                    for(int i=0;i<home_dialog_drug_compare_List.size();i++)
+                    {
+                        for (int j=0;j<home_dialog_all_drugsList.size();j++)
+                        {
+                            if(home_dialog_drug_compare_List.get(i).getSno() == home_dialog_all_drugsList.get(j).getSno())
+                            {
+                                home_dialog_all_drugsList.get(j).setCompare_check(false);
+                                break;
+                            }
+                        }
+                    }
+                    home_dialog_drug_compare_List.clear();
+                    homeDialogDrugCompareAdapter.notifyDataSetChanged();
+                    homeDialogAllDrugsAdapter.notifyDataSetChanged();
+                }else{
+                    search_text="";
+                    home_dialog_drug_search_edittext.setText("");
+                    home_dialog_drug_select_unitList.clear();
+                    home_dialog_all_drugsList.clear();
+                    getSearchRecords();
+                    checkList();
+                }
             }
         });
 
+
+
+        //Get Patient Records From Server
+        patientRecordslist.clear();
+        homeRecordsAdapter.notifyDataSetChanged();
         if(AppController.getInstance().getRequestQueue() != null)
         {
             AppController.getInstance().cancelPendingRequests(tag_string_req);
@@ -414,11 +515,11 @@ public class HomeFragment extends Fragment {
         home_dialog_drug_select_search_lv = (ListView) homeView.findViewById(R.id.home_dialog_drug_select_unit_lv);
         if(home_dialog_drug_select_unitList.size()==0)
         {
-            setLayoutParams(50);
+            setLayoutParams(80);
             home_dialog_drug_select_search_lv.setVisibility(View.GONE);
         }else{
             home_dialog_drug_select_search_lv.setVisibility(View.VISIBLE);
-            setLayoutParams(150);
+            setLayoutParams(220);
             homeDialogDrugSelectUnitAdapter.notifyDataSetChanged();
             homeTodayDrugAdapter.notifyDataSetChanged();
         }
@@ -428,8 +529,8 @@ public class HomeFragment extends Fragment {
     {
         LinearLayout home_dialog_drug_all_unit_lyt = (LinearLayout) homeView.findViewById(R.id.home_dialog_drug_all_unit_lyt);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                ListView.LayoutParams.WRAP_CONTENT,
-                ListView.LayoutParams.WRAP_CONTENT
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
         );
         params.bottomMargin=margin;
         home_dialog_drug_all_unit_lyt.setLayoutParams(params);
@@ -614,7 +715,7 @@ public class HomeFragment extends Fragment {
                                     jobj2.getInt("age"),weight,arr2.length(),temperature,pressure,sugar,disease,jobj2.getString("date"),
                                     jobj2.getString("next_check_date"), Userinfo.getPatient_status_List().get(Userinfo.getPatient_status_no_List().indexOf(jobj2.getInt("status"))),
                                     Userinfo.getPatient_status_color_List().get(Userinfo.getPatient_status_no_List().indexOf(jobj2.getInt("status"))),
-                                    jobj2.getString("description"),false,patient_historyList);
+                                    jobj2.getString("description"),false);
                             patientRecordslist.add(patientRecords);
                         }
                     }
@@ -699,6 +800,7 @@ public class HomeFragment extends Fragment {
                         JSONArray arr = jObj.getJSONArray("search");
                         for (int i = 0; i < arr.length(); i++) {
                             JSONObject jobj2 = arr.getJSONObject(i);
+                            Boolean Comapare_check = false;
                             //Add Dialog Drug List
                             JSONArray arr2 = jObj.getJSONArray(String.valueOf(jobj2.getInt("sno")));
                             List<Home_Dialog_Drug_Unit> home_dialog_drug_unitList = new ArrayList<>();
@@ -722,18 +824,25 @@ public class HomeFragment extends Fragment {
                                     }
                                 }
                             }
+                            for(int l=0;l<home_dialog_drug_compare_List.size();l++)
+                            {
+                                if(home_dialog_drug_compare_List.get(l).getSno()==jobj2.getInt("sno"))
+                                {
+                                    Comapare_check = true;
+                                }
+                            }
 
 
                             //Add Search Drug Records
-                            Home_Dialog_Drug_All_Unit home_dialog_drug_all_unit = new Home_Dialog_Drug_All_Unit(jobj2.getInt("sno"), jobj2.getString("name"),
-                                    jobj2.getString("generic_search"),jobj2.getString("manufacturer_search"),jobj2.getString("unit_search"),jobj2.getString("diseases_search"),home_dialog_drug_unitList,false,0);
-                            home_dialog_drug_all_unitList.add(home_dialog_drug_all_unit);
+                            Home_Dialog_All_Drugs home_dialog__all_drugs = new Home_Dialog_All_Drugs(jobj2.getInt("sno"), jobj2.getString("name"),
+                                    jobj2.getString("generic_search"),jobj2.getString("manufacturer_search"),jobj2.getString("unit_search"),jobj2.getString("diseases_search"),home_dialog_drug_unitList,false,Comapare_check,0);
+                            home_dialog_all_drugsList.add(home_dialog__all_drugs);
 
                         }
                     }else{
 
                     }
-                    homeDialogDrugAllUnitAdapter.notifyDataSetChanged();
+                    homeDialogAllDrugsAdapter.notifyDataSetChanged();
                     setLayoutVisibility(0,0,1,0);
 
 

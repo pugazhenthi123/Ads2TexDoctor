@@ -19,6 +19,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -37,6 +39,7 @@ import com.ads2tex.ads2texdoctor.volley.toolbox.StringRequest;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -208,7 +211,6 @@ public class Login extends AppCompatActivity {
                         // Launch Login activity
                         Intent intent = new Intent(Login.this,
                                 Splash.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                         finish();
                     } else {
@@ -411,7 +413,6 @@ public class Login extends AppCompatActivity {
                         // Launch Login activity
                         Intent intent = new Intent(Login.this,
                                 Splash.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                         finish();
                     }

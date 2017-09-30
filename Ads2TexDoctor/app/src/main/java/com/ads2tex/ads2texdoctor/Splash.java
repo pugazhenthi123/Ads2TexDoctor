@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -36,14 +35,10 @@ import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 
-import org.apache.http.HttpStatus;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -84,28 +79,6 @@ public class Splash extends AppCompatActivity implements BaseSliderView.OnSlider
         b_btn = (Button)findViewById(R.id.b_btn);
         hospital_logo = (ImageView) findViewById(R.id.hospital_logo);
         new LoadImageTask(this).execute(Config.getLogoAddress()+Userinfo.getLogo_link());
-
-//        Picasso.with(this)
-//                .load(uri)
-//                .into(new Target() {
-//                    @Override
-//                    public void onBitmapLoaded(final Bitmap bitmap, Picasso.LoadedFrom from) {
-//               /* Save the bitmap or do something with it here */
-//
-//                        // Set it in the ImageView
-//                        hospital_logo.setImageBitmap(bitmap);
-//                    }
-//
-//                    @Override
-//                    public void onBitmapFailed(Drawable errorDrawable) {
-//
-//                    }
-//
-//                    @Override
-//                    public void onPrepareLoad(Drawable placeHolderDrawable) {
-//
-//                    }
-//                });
         b_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -152,7 +125,6 @@ public class Splash extends AppCompatActivity implements BaseSliderView.OnSlider
                     onStop();
                     Intent intent = new Intent(Splash.this,
                                 MainActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     finish();
                 }

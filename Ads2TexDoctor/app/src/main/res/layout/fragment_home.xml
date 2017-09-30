@@ -39,12 +39,39 @@
                         android:id="@+id/home_dialog_search_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"
                         android:layout_marginLeft="45dp"
+                        android:layout_marginRight="80dp"
                         android:background="#eeeeee"
                         android:hint="Type here to search"
                         android:ems="10"
                         android:textSize="@dimen/abc_text_size_large_material" />
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:fadingEdge="horizontal"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:text="Compare"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#303F9F"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                        <Switch
+                            android:id="@+id/home_dialog_drug_compare_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"/>
+                    </RelativeLayout>
+
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -54,17 +81,31 @@
                 </RelativeLayout>
 
                 <LinearLayout
-                    android:id="@+id/home_dialog_drug_all_unit_lyt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="70dp">
+                    android:orientation="vertical">
                     <ListView
-                        android:id="@+id/home_dialog_drug_all_unit_lv"
+                    android:id="@+id/home_dialog_drug_compare_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50dp"
+                    android:visibility="gone"
+                    />
+                    <LinearLayout
+                        android:id="@+id/home_dialog_drug_all_unit_lyt"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        />
+                        android:layout_marginBottom="80dp"
+                        >
+                        <ListView
+                            android:id="@+id/home_dialog_drug_all_unit_lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </LinearLayout>
+
                 </LinearLayout>
+
 
             </LinearLayout>
             <LinearLayout
@@ -142,7 +183,18 @@
             android:textColorHighlight="#000000"
             android:textSize="@dimen/abc_text_size_small_material" />
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Token"
+            android:textColor="#303F9F"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -191,9 +243,10 @@
                 <Button
                     android:id="@+id/home_token_refresh_btn"
                     android:layout_width="50dp"
-                    android:layout_height="34dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/ic_file_document"/>
             </RelativeLayout>
 
@@ -358,10 +411,24 @@
                             android:layout_marginLeft="3dp"
                             android:layout_marginTop="2dp"
                             android:scrollHorizontally="true"
-                            android:text="Today Drugs List:"
+                            android:text="Today Drugs:"
                             android:textColor="@color/carbon_black"
                             android:textSize="16dp"
                             android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/today_drugs_compare_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="60dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:onClick="true"
+                            android:text="Compare List"
+                            android:textColor="@color/blue"
+                            android:textSize="18dp"
+                            android:typeface="serif" />
 
                         <TextView
                             android:id="@+id/today_drugs_add_tv"
@@ -445,7 +512,7 @@
                         android:id="@+id/home_patient_today_drug_lv"
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginTop="3dp"
+                        android:layout_marginTop="5dp"
                         android:divider="@null"
                         android:dividerHeight="0dp"
                         android:visibility="gone" />
@@ -454,6 +521,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
                         android:layout_gravity="bottom"
                         android:background="#f7f7f7">
 

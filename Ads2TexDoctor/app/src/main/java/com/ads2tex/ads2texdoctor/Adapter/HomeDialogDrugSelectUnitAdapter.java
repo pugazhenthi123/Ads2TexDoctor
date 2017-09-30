@@ -6,13 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.ads2tex.ads2texdoctor.Fragments.HomeFragment;
-import com.ads2tex.ads2texdoctor.NavigationDrawer.NavigationDrawerCallbacks;
-import com.ads2tex.ads2texdoctor.Pojo.Home_Dialog_Drug_All_Unit;
 import com.ads2tex.ads2texdoctor.Pojo.Home_Dialog_Drug_Select_Unit;
 import com.ads2tex.ads2texdoctor.Pojo.Userinfo;
 import com.ads2tex.ads2texdoctor.R;
@@ -69,22 +65,23 @@ public class HomeDialogDrugSelectUnitAdapter extends BaseAdapter {
             holder.remove_btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    for(int i=0;i<HomeFragment.home_dialog_drug_all_unitList.size();i++)
+                    //Remove the Selected Medicine from Selected_Drugs and Today Drugs List
+                    for(int i = 0; i<HomeFragment.home_dialog_all_drugsList.size(); i++)
                     {
-                        if(HomeFragment.home_dialog_drug_all_unitList.get(i).getSno()==HomeFragment.home_dialog_drug_select_unitList.get(position).getSno())
+                        if(HomeFragment.home_dialog_all_drugsList.get(i).getSno()==HomeFragment.home_dialog_drug_select_unitList.get(position).getSno())
                         {
-                            for(int j=0;j<HomeFragment.home_dialog_drug_all_unitList.get(i).getHome_dialog_drug_unitList().size();j++)
+                            for(int j = 0; j<HomeFragment.home_dialog_all_drugsList.get(i).getHome_dialog_drug_unitList().size(); j++)
                             {
-                                if(HomeFragment.home_dialog_drug_all_unitList.get(i).getHome_dialog_drug_unitList().get(j).getSno()==HomeFragment.home_dialog_drug_select_unitList.get(position).getUnit())
+                                if(HomeFragment.home_dialog_all_drugsList.get(i).getHome_dialog_drug_unitList().get(j).getSno()==HomeFragment.home_dialog_drug_select_unitList.get(position).getUnit())
                                 {
-                                    HomeFragment.home_dialog_drug_all_unitList.get(i).getHome_dialog_drug_unitList().get(j).setCheck(false);
+                                    HomeFragment.home_dialog_all_drugsList.get(i).getHome_dialog_drug_unitList().get(j).setCheck(false);
                                 }
                             }
                         }
                     }
                     HomeFragment.home_dialog_drug_select_unitList.remove(position);
                     HomeFragment.checkList();
-                    HomeFragment.homeDialogDrugAllUnitAdapter.notifyDataSetChanged();
+                    HomeFragment.homeDialogAllDrugsAdapter.notifyDataSetChanged();
                 }
             });
         return convertView;
